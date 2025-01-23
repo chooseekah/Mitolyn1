@@ -3,133 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the Mitolyn Purple Peel Exploit, a scientifically formulated blend of natural ingredients to support weight management and overall health.">
+    <meta name="description" content="Discover Mitolyn Purple Peel Exploit, a scientifically formulated blend of natural ingredients to support weight management and overall health.">
     <title>Mitolyn Purple Peel Exploit - Your Weight Management Ally</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #fafafa;
+            background: #f4f8fb;
+            scroll-behavior: smooth;
         }
         header {
-            background: linear-gradient(to right, #ff7eb3, #ff758c, #ff6f6f);
+            background: url('https://source.unsplash.com/1600x900/?health,fitness') no-repeat center center/cover;
             color: #fff;
             text-align: center;
-            padding: 80px 20px;
-            border-bottom: 5px solid #ff3e57;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 20px 20px 0 0;
+            padding: 120px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
         }
         header h1 {
-            font-size: 4em;
+            font-size: 3.5rem;
             margin: 0;
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            position: relative;
         }
         header p {
-            font-size: 2em;
-            margin: 15px 0 0;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            font-size: 1.5rem;
+            margin-top: 10px;
+            z-index: 1;
+            position: relative;
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #ff3e57;
+            background: #0072ff;
             padding: 15px 0;
-            border-radius: 0 0 20px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.3em;
-            font-weight: bold;
-            transition: color 0.3s;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: color 0.3s, background 0.3s;
         }
         nav a:hover {
-            color: #ffdda1;
+            background: #ffdda1;
+            color: #0072ff;
+            border-radius: 5px;
         }
         .container {
-            padding: 30px;
-            max-width: 900px;
+            padding: 40px 20px;
+            max-width: 1200px;
             margin: 0 auto;
+            background: #fff;
             border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
         }
         .product-section {
-            margin: 30px 0;
+            margin-bottom: 50px;
         }
         .product-section h2 {
-            font-size: 2.5em;
+            font-size: 2.5rem;
             color: #0072ff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: center;
+            color: #555;
         }
         .ingredient {
             margin-bottom: 30px;
             padding: 20px;
-            background: linear-gradient(to right, #f9f7f6, #ececec);
+            background: linear-gradient(to right, #ffffff, #f7f7f7);
             border-radius: 12px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .ingredient:hover {
+            transform: translateY(-10px);
         }
         .ingredient h3 {
             margin-bottom: 10px;
-            font-size: 2em;
+            font-size: 1.8rem;
             color: #e65100;
         }
         .ingredient ul {
-            padding-left: 30px;
-            font-size: 1.2em;
+            padding-left: 20px;
+            font-size: 1.1rem;
+            list-style: disc;
         }
         .cta {
-            background: linear-gradient(to right, #0072ff, #28a745);
+            background: linear-gradient(to right, #28a745, #0072ff);
             color: #fff;
             text-align: center;
-            padding: 30px;
-            margin: 30px 0;
+            padding: 50px 20px;
             border-radius: 12px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            z-index: 2;
+            position: relative;
         }
         .cta a {
-            color: #fff;
-            text-decoration: none;
+            font-size: 1.5rem;
             font-weight: bold;
-            font-size: 1.8em;
-            background-color: #28a745;
-            padding: 15px 30px;
+            padding: 15px 40px;
+            background: #28a745;
+            color: #fff;
             border-radius: 8px;
+            text-decoration: none;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s;
+            z-index: 2;
+            position: relative;
+            transition: background 0.3s, transform 0.2s;
         }
         .cta a:hover {
-            background-color: #0056b3;
+            background: #0056b3;
+            transform: scale(1.1);
         }
         footer {
-            background-color: #0072ff;
+            background: #0072ff;
             color: #fff;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
+            padding: 20px;
+            margin-top: 40px;
             border-radius: 0 0 20px 20px;
         }
         footer p {
-            font-size: 1.2em;
+            font-size: 1rem;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Achieve Your Dream Body with Mitolyn</h1>
-        <p>Discover the Secret to Sustainable Weight Management Today</p>
+        <div class="content">
+            <h1>Achieve Your Dream Body with Mitolyn</h1>
+            <p>Discover the Secret to Sustainable Weight Management Today</p>
+        </div>
     </header>
+
     <nav>
         <a href="#about">About</a>
         <a href="#ingredients">Ingredients</a>
         <a href="#buy">Buy Now</a>
     </nav>
+
     <div class="container">
         <section id="about" class="product-section">
             <h2>About Mitolyn Purple Peel Exploit</h2>
-            <p style="font-size: 1.5em;">Mitolyn Purple Peel Exploit is a cutting-edge formulation designed to support your weight management and overall health. Using a blend of scientifically researched natural ingredients, it promotes metabolic efficiency, energy production, stress reduction, and much more.</p>
+            <p>Mitolyn Purple Peel Exploit is a cutting-edge formulation designed to support your weight management and overall health. Using a blend of scientifically researched natural ingredients, it promotes metabolic efficiency, energy production, stress reduction, and much more.</p>
         </section>
 
         <section id="ingredients" class="product-section">
@@ -190,7 +247,7 @@
 
         <section id="buy" class="cta">
             <h2>Ready to Start Your Journey?</h2>
-            <p><a href="https://4f3eabbgi6-wy08flfri6b1z52.hop.clickbank.net" target="_blank">Click here to order Mitolyn Purple Peel Exploit now!</a></p>
+            <a href="https://4f3eabbgi6-wy08flfri6b1z52.hop.clickbank.net" target="_blank">Order Mitolyn Purple Peel Exploit Now</a>
         </section>
     </div>
 
